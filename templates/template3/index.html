@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" href="/images/Logo-02..png" type="image/x-icon">
+  <title>iPhone Hub</title>
+  <link rel="stylesheet" href="../../style.css" />
+  <style>
+    body {
+      background: #f9fafb;
+      font-family: 'Segoe UI', sans-serif;
+      color: #111;
+      margin: 0;
+      padding: 0;
+    }
+    .hero {
+      background: linear-gradient(135deg, #0a0a23, #1a1a3c);
+      color: white;
+      text-align: center;
+      padding: 3em 1em;
+    }
+    .hero h1 {
+      font-size: 2.8em;
+      margin: 0;
+      letter-spacing: 1.2px;
+    }
+    .hero p {
+      font-size: 1.3em;
+      margin-top: 0.5em;
+      font-weight: 300;
+    }
+
+    .products {
+      max-width: 1000px;
+      margin: 3em auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+      gap: 2em;
+      padding: 0 1.5em;
+    }
+    .product-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .product-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+    .product-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-bottom: 1px solid #eee;
+    }
+    .product-info {
+      padding: 1.2em;
+    }
+    .product-info h3 {
+      margin: 0.4em 0 0.2em;
+      font-weight: 700;
+      color: #0a0a23;
+    }
+    .product-info p {
+      color: #555;
+      margin: 0.2em 0 1em;
+      font-weight: 600;
+      font-size: 1.1em;
+    }
+    .product-info .price {
+      font-size: 1.2em;
+      color: #ffcc00;
+      font-weight: 700;
+    }
+
+    footer {
+      text-align: center;
+      background: #eaeaea;
+      padding: 1.5em;
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 4em;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2em;
+      }
+      .products {
+        grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <h1>iPhone Hub</h1>
+    <p>Your trusted destination for the latest iPhones at great prices.</p>
+  </div>
+
+  <section class="products">
+    <div class="product-card">
+      <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-14-pro-model-unselect-gallery-1-202209?wid=940&hei=1112&fmt=png-alpha&.v=1661026278457" alt="iPhone 14 Pro Max">
+      <div class="product-info">
+        <h3>iPhone 14 Pro Max</h3>
+        <p class="price">R22,999</p>
+        <p>6.7" Display, A16 Bionic, Pro Camera System</p>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-blue-select-202209?wid=940&hei=1112&fmt=png-alpha&.v=1661027780051" alt="iPhone 14">
+      <div class="product-info">
+        <h3>iPhone 14</h3>
+        <p class="price">R17,999</p>
+        <p>6.1" Display, A15 Bionic, Dual Camera</p>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-midnight-select-2021?wid=940&hei=1112&fmt=png-alpha&.v=1645572315935" alt="iPhone 13">
+      <div class="product-info">
+        <h3>iPhone 13</h3>
+        <p class="price">R14,999</p>
+        <p>6.1" Display, A15 Bionic, Dual Camera</p>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-se-black-select-2020?wid=940&hei=1112&fmt=png-alpha&.v=1586574260319" alt="iPhone SE">
+      <div class="product-info">
+        <h3>iPhone SE</h3>
+        <p class="price">R8,999</p>
+        <p>4.7" Display, A13 Bionic, Classic Design</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 iPhone Hub | Powered by PixelSpark</p>
+  </footer>
+
+</body>
+</html>

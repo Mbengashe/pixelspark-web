@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="shortcut icon" href="./images/Logo-02..png" type="image/x-icon">
+  <title>PixelSpark</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <!-- Logo placeholder -->
+    <img src="images/Logo-01..png" alt="PixelSpark Logo" class="logo"/>
+    <h1>PixelSpark Web</h1>
+    <p class="slogan">Websites that Spark Growth</p>
+
+    
+    <section class="templates-link">
+      <h2>Need a Website Fast?</h2>
+      <p>Choose from our ready-made templates for your business.</p>
+      <!-- ✅ Updated anchor tag -->
+      <a href="templates.html" class="button" onclick="alert('View and choose your future ✨'); return true;">Browse Templates</a>
+    </section>
+  </header>
+
+  <section class="about">
+    <h2>Welcome</h2>
+    <p>We build stunning, mobile-friendly websites tailored for small and local businesses. Whether you're a startup, freelancer, or entrepreneur, we’ll help you get online quickly with a professional look.</p>
+  </section>
+
+  <section class="services">
+    <h2>What We Offer</h2>
+    <ul>
+      <li><strong>1-Page Starter Sites:</strong> Perfect for small budgets and fast launches.</li>
+      <li><strong>Custom HTML & CSS Designs:</strong> Clean code, modern layouts.</li>
+      <li><strong>Responsive Layouts:</strong> Your site will look great on any device.</li>
+      <li><strong>Quick Turnaround:</strong> Most websites are ready within 3–5 days.</li>
+      <li><strong>Affordable Maintenance:</strong> Need changes later? We’ve got your back.</li>
+      <li><strong>Need a Templates ? :</strong> Need existing templete? We also got your back.</li>
+    </ul>
+  </section>
+
+  <section class="services">
+    <a href="prices.html">Prices</a><p>Negotiation will depend on the project</p>
+  </section>
+
+
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:danielmbengashe452@gmail.com">pixelspark@gmail.com</a> <br><small>We’ll respond within a few hours.</small></p>
+    <p>WhatsApp: <a href="https://wa.me/0660561582" target="_blank">Click to Message</a> <br><small>We’re available from 8am–6pm daily.</small></p>
+  </section>
+
+<footer>
+  <p>
+    <a href="terms.html">Terms & Conditions</a>
+  </p>
+  <p>© 2025 PixelSpark. Crafted in Cape Town.</p>
+</footer>
+
+  <script>
+    // Review submission (only runs if form exists)
+    const reviewForm = document.getElementById('review-form');
+    if (reviewForm) {
+      reviewForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const name = document.getElementById('name').value;
+        const message = document.getElementById('message').value;
+        const reviewList = document.getElementById('review-list');
+
+        const newReview = document.createElement('p');
+        newReview.innerHTML = `<strong>${name}:</strong> "${message}"`;
+        reviewList.appendChild(newReview);
+
+        alert("Thank you for your review, " + name + "!");
+        this.reset();
+      });
+    }
+  </script>
+</body>
+</html>
